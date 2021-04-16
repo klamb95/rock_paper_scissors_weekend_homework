@@ -5,6 +5,7 @@ player_1 = Player("Kieran", "Rock")
 player_2 = Player("Aidan", "Scissors")
 player_3 = Player("Nick", "Paper")
 
+
 players = [player_1, player_2]
 
 def get_preferred_option(player_1, player_2):
@@ -40,20 +41,28 @@ def get_this_working(gesture_1, gesture_2):
         
     return player_2
 
+
+
 def this_works(gesture_1, gesture_2):
     if gesture_1 == "Rock" and gesture_2 == "Scissors":
-        return gesture_1
+        gesture_1 = player_1
+        gesture_2 = player_2
+        return " player 1!"
         
     if gesture_1 == "Scissors" and gesture_2 == "Paper":
-        return gesture_1
+        gesture_1 = player_2
+        gesture_2 = player_3
+        return " player 1!"
         
     if gesture_1 == "Paper" and gesture_2 == "Rock":
-        return gesture_1
+        gesture_1 = player_3
+        gesture_2 = player_1
+        return " player 1!"
     
     if gesture_1 == gesture_2:
         return "draw"
         
-    return gesture_2
+    return ' player 2!'
 
 
 
