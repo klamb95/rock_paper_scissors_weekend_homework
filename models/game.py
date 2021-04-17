@@ -1,12 +1,12 @@
 from models.player import *
 
 
-player_1 = Player("Kieran", "Rock")
-player_2 = Player("Aidan", "Scissors")
-player_3 = Player("Nick", "Paper")
+# player_1 = Player("Kieran", "Rock")
+# player_2 = Player("Aidan", "Scissors")
+# player_3 = Player("Nick", "Paper")
 
 
-players = [player_1, player_2]
+# players = [player_1, player_2]
 
 
 def get_preferred_option(player_1, player_2):
@@ -45,15 +45,15 @@ def get_this_working(gesture_1, gesture_2):
 
 def this_works(gesture_1, gesture_2):
     if gesture_1 == "rock" and gesture_2 == "scissors":
-        return " player 1!"
+        return f" player 1 by playing {gesture_1}!"
 
     if gesture_1 == "scissors" and gesture_2 == "paper":
-        return " player 1!"
+        return f" player 1 by playing {gesture_1}!"
 
     if gesture_1 == "paper" and gesture_2 == "rock":
-        return " player 1!"
+        return f" player 1 by playing {gesture_1}!"
 
     if gesture_1 == gesture_2:
         return "none"
 
-    return ' player 2!'
+    return f' player 2 by playing {gesture_2}!'
