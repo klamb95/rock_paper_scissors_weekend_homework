@@ -8,6 +8,7 @@ from models.player import *
 
 # players = [player_1, player_2]
 
+accepted_responses = ['Rock', 'Paper', 'Scissors']
 
 def get_preferred_option(player_1, player_2):
     if player_1.gesture == "Rock" and player_2.gesture == "Scissors":
@@ -44,6 +45,8 @@ def get_this_working(gesture_1, gesture_2):
 
 
 def this_works(gesture_1, gesture_2):
+    if gesture_1 in accepted_response and gesture_2 in accepted_response:
+        
     if gesture_1 == "rock" and gesture_2 == "scissors":
         return f" player 1 by playing {gesture_1}!"
 
